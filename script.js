@@ -1,3 +1,4 @@
+// array with quotes
 let fortuneQuotes = [
   `The fortune you seek is in another cookie.`,
   `Fortune not found? Abort, Retry, Ignore.`,
@@ -14,8 +15,15 @@ let fortuneQuotes = [
   `You only live once, but if you do it right, once is enough.`,
 ];
 
+//random whole number that ranges from 0 to the length of our quotes array
+//Math.floor() function takes in a parameter and rounds the number downward to the nearest integer.
+//The Math.random() function will generate a random decimal number between 0 and 1.
+//Math.floor() is always rounding down to the nearest decimal, therefore, every decimal between 0 and 1 will always revert back to 0.
+// multiply Math.random() with the length of our quotes array.
+
 function newQuote() {
   let randomNumber = Math.floor(Math.random() * fortuneQuotes.length);
+  //Placing the quote into the HTML quoteDisplay element
   document.getElementById(`quoteDisplay`).innerHTML =
     fortuneQuotes[randomNumber];
 }
