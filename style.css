@@ -1,0 +1,41 @@
+body {
+  background-color: red;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 8em;
+  text-shadow: 1px 2px 3px #ffd700;
+}
+#hero p {
+  font-size: 2em;
+  color: #ffd700;
+  text-shadow: 1px 2px 3px black;
+}
+
+#furtune-cookie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8%;
+}
+
+#furtune-cookie button {
+  border: none;
+  background-color: transparent;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+#quoteDisplay {
+  font-size: 2em;
+
+  padding: 30px;
+  text-shadow: 1px 1px 3px whitesmoke;
+  border: 8px dotted #ffd700;
+}
